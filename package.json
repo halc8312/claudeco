@@ -1,0 +1,32 @@
+{
+  "name": "web-screenshot-collector",
+  "version": "1.0.0",
+  "description": "Web screenshot collector for GPT-4o Vision fine-tuning",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "collect": "node dist/collect.js"
+  },
+  "keywords": [
+    "screenshot",
+    "web-scraping",
+    "gpt-4o",
+    "fine-tuning"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "p-limit": "^5.0.0",
+    "playwright": "^1.45.0",
+    "puppeteer": "^24.9.0",
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.3"
+  }
+}
